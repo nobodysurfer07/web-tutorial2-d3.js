@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
     <link rel="stylesheet" href="20220623_D3_7_interactive_bar_chart/style.css">
     
-    <title>Interactive 2 Bar-chart</title>
+    <title>Interactive Bar-chart</title>
 </head>
 <body>
-    <div class="bar-chart-container"></div>
-    <div class="controls">
-        <button data-name="revenue">Revenue</button>
-        <button data-name="budget">Budget</button>
-        <button data-name="popularity">Popularity</button>
-    </div>
-    
-    <div class="tooltip">
-        <div class="tip-header">
-            <h3></h3>
-            <h4></h4>
+    <!-- Wrapper-->
+    <div id="wrapper">
+        <!-- Nav -->
+        <nav id="nav">
+            <a href="index.html" class="icon solid fa-home"><span>Home</span></a>
+            <a href="index.html#work" class="icon solid fa-folder"><span>Work</span></a>
+            <a href="index.html#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+            <a href="https://twitter.com/d3js_org" class="icon brands fa-twitter"><span>Twitter</span></a>
+        </nav>
+
+        <!-- Main -->
+        <div class="bar-chart-container"></div>
+        <div class="controls">
+            <button data-name="revenue">Revenue</button>
+            <button data-name="budget">Budget</button>
+            <button data-name="popularity">Popularity</button>
         </div>
-        <div class="tip-body"></div>
+        
+        <div class="tooltip">
+            <div class="tip-header">
+                <h3></h3>
+                <h4></h4>
+            </div>
+            <div class="tip-body"></div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
     </div>
 
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
     <script src="//unpkg.com/d3"></script>
     <script src="20220623_D3_7_interactive_bar_chart/main.js"></script>
 
